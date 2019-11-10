@@ -1,2 +1,3 @@
 name = "Bartholomew j scrubbs III"
-print.title(name)
+print(name.title())
+
