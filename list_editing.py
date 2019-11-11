@@ -65,3 +65,6 @@ print(trucks)
 # Notice how len() and sorted() are both wrapped in print, while .reverse() is called separately.
 # len() and sorted() are FUNCTIONS, .reverse() is a METHOD.
 print(len(trucks))
+# Notice how len() counts from 1, not from 0. This is simply to make it more human-readable.
+# If your list has a len() count of 4, the 4th item has an index # of 3 if you wish to call for it specifically in a
+# print cmd.
