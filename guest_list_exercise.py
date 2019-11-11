@@ -46,3 +46,5 @@ RO_drop = guest_list.pop(-1)
 print(f"Sorry {RO_drop}, no trout for you")
 print(guest_list)
 print(f"Good news {guest_list[0]}, {guest_list[1]}, and {guest_list[2]}! You're still on the list.")
+# how many guests do I have now??!? use the len() function to find out
+print(f"This leaves me with just {len(guest_list)} guests")
