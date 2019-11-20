@@ -52,7 +52,7 @@ sedans.sort(reverse=True)
 print(sedans)
 # but there is a reverse sort, also permanent
 
-trucks = ['F-150', 'Tundra', 'Hemi', 'Raptor']
+trucks = ['F-150', 'Tundra', 'Hemi', 'Raptor', 'Ram', 'Mack', 'Silverado', 'Tacoma', 'Gladiator', 'Sierra']
 print(trucks)
 # if you fear sort commitment, use sorted()
 print(sorted(trucks))
@@ -68,3 +68,25 @@ print(len(trucks))
 # Notice how len() counts from 1, not from 0. This is simply to make it more human-readable.
 # If your list has a len() count of 4, the 4th item has an index # of 3 if you wish to call for it specifically in a
 # print cmd.
+
+print(trucks[0:3])
+# This is called printing a SLICE of a list. Uses the starts-from-0 system, so it selects from 0 and stops BEFORE
+# the second variable specified.
+# Omitting the first variable will simply call every value up to the second variable. Ditto for omitting the second.
+print(trucks[:5])
+print(trucks[3:])
+# You can use negative variables too
+print(trucks[-3:])
+print(trucks[:-3])
+
+print("Here are four of the best trucks on the market today:")
+for truck in trucks[:-4]:
+    print(truck.title())
+# See your mistake? By selecting -4 as the latter variable, you told the list to select every value up to the last 4!
+print("Here are four of the best trucks on the market today:")
+for truck in trucks[-4:]:
+    print(truck.title())
+# That looks better!
+
+best_trucks = trucks[:]
+# copies the list; giving no variable selects from the beginning to the end.
