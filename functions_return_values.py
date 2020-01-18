@@ -18,3 +18,22 @@ def get_formatted_author(first_name, last_name, best_book, middle_name=''):
 #the return clause is fed the product of the operations run on the raw arguments, 'name_and_book'.        
 author_blurb = get_formatted_author('Charles','Lewis','the chronicles of narnia')
 print(author_blurb)
+
+def make_album(artist_name, album_title, song_count=None):
+    artist = {'name':artist_name,'title':album_title}
+    if song_count:
+        artist['songs'] = song_count
+    return artist
+
+while True:
+    print("\n Enter your favorite musician and their best album:")
+    artist_name = input("Artist name: ")
+    if artist_name == 'q':
+        break
+    album_title = input("Best album: ")
+    if album_title == 'q':
+        break
+    
+    name_and_album = f"{artist_name.title()}, '{album_title.title()}'"
+    print(f"\n filler text {name_and_album}")
+    
