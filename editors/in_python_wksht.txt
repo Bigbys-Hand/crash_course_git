@@ -1,0 +1,3 @@
+In Python you can create anything
+In Python you can do math
+In Python you write classes with attributes and methods, then subclasses with even more methods, then instances to make them work
